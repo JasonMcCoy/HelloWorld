@@ -6,7 +6,20 @@ class Program
 	{
 		string firstName = "Jason";
 		string lastName = "McCoy";
+		string errorMSG = "WRONG";
 
-		Console.WriteLine(firstName + lastName);
+		if (firstName == "McCoy")
+		{
+			Console.WriteLine(errorMSG);
+		}
+		else if (firstName == "Jason" && lastName == "McCoy")
+		{
+			Console.WriteLine(firstName + lastName);
+		}
+
+		else
+		{
+			Console.WriteLine(firstName + lastName);
+		}
 	}
 }
