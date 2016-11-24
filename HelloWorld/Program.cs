@@ -1,25 +1,29 @@
 ﻿using System;
 
-class Program
+namespace learningCSharp
 {
-	static void Main(string[] args)
-	{
-		string firstName = "Jason";
-		string lastName = "McCoy";
-		string errorMSG = "WRONG";
+    public class Person
+    {
+        public string firstName;
+        public string lastName;
 
-		if (firstName == "McCoy")
-		{
-			Console.WriteLine(errorMSG);
-		}
-		else if (firstName == "Jason" && lastName == "McCoy")
-		{
-			Console.WriteLine(firstName + lastName);
-		}
+        public void Introduce()
+        {
+            Console.WriteLine("Hello! My name is " + firstName + " " + lastName);
+        }
+    }
 
-		else
-		{
-			Console.WriteLine(firstName + lastName);
-		}
-	}
+     class Program
+    {
+        static void Main(string[] args)
+        {
+            var Jason = new Person();
+
+            Jason.firstName = "Jason";
+            Jason.lastName = "McCoy";
+
+            Jason.Introduce();
+        }
+    }
+
 }
