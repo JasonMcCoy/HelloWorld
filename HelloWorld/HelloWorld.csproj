@@ -10,6 +10,8 @@
     <Compile Include="**\*.cs" />
     <EmbeddedResource Include="**\*.resx" />
     <Compile Remove="Calculator.cs" />
+    <Compile Remove="EmptyClass.cs" />
+    <Compile Remove="enums.cs" />
   </ItemGroup>
 
   <ItemGroup>

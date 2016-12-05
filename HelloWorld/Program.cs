@@ -3,6 +3,14 @@ using HelloWorld.Math;
 
 namespace learningCSharp.Math
 {
+	public enum shippingMethods
+	{
+
+		twoDayShipping = 2,
+		threeDayShipping = 3,
+		groundShipping = 5
+
+	}
 
 	class Program
 	{
@@ -58,6 +66,11 @@ namespace learningCSharp.Math
 			Console.WriteLine(myFullName);
 
 
+			var twoDayShipping = shippingMethods.twoDayShipping;
+			var threeDayShipping = shippingMethods.threeDayShipping;
+			var fiveDayShipping = shippingMethods.groundShipping;       
+
+			Console.WriteLine("Hi, your shipment will arrive in {0} days.", (int)twoDayShipping);
 
 		}
 	}
