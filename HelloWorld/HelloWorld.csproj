@@ -12,6 +12,7 @@
     <Compile Remove="Calculator.cs" />
     <Compile Remove="EmptyClass.cs" />
     <Compile Remove="enums.cs" />
+    <Compile Remove="Season.cs" />
   </ItemGroup>
 
   <ItemGroup>
